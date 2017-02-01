@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button (click)="cancel()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+    <ion-title>Contas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Descrição</ion-label>
+      <ion-input type="text" [(ngModel)]="conta.descricao"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button full (click)="salvar()">
+    Salvar
+  </button>
+</ion-content>

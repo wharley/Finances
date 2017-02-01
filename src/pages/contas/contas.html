@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contas
+    </ion-title>
+
+    <button ion-button menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of listContas">
+      <ion-item  (click)="edit(item)">
+        {{item.descricao}}
+      </ion-item>
+      <ion-item-options>
+        <button  (click)="delete(item)" ion-button color="danger">
+          Excluir
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <!-- Botão Adicionar Conta -->
+  <ion-fab bottom right >
+    <button ion-fab color="danger" (click)="insert()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

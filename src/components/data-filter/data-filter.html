@@ -1,0 +1,11 @@
+<ion-row>
+  <ion-col width-10="">
+    <button ion-button icon-left large clear round color="favorite" (click)="previousMonth()"><ion-icon name="arrow-dropleft-circle"></ion-icon></button>
+  </ion-col>
+  <ion-col width-67="">
+    <h4 class="texto-destaque" color="favorite" (click)="executeClickMonth()">{{mesSelecionado | date:'MMMM - yyyy' | uppercase}}</h4>
+  </ion-col>
+  <ion-col width-10="">
+    <button ion-button icon-left large clear round color="favorite"  (click)="nextMonth()"><ion-icon name="arrow-dropright-circle"></ion-icon></button>
+  </ion-col>
+</ion-row>

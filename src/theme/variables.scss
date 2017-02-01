@@ -1,7 +1,5 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/v2/theming/
-$font-path: "../assets/fonts";
-
 @import "ionic.globals";
 
 
@@ -28,7 +26,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  favorite:   #69BB7B
 );
 
 
@@ -68,11 +67,9 @@ $colors: (
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/v2/ionicons/
 
-@import "ionic.ionicons";
+$ionicons-font-path: "../assets/fonts";
+@import "ionicons";
 
 
 // Fonts
 // --------------------------------------------------
-
-@import "roboto";
-@import "noto-sans";

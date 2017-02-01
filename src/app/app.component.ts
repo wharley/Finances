@@ -3,6 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
+import { ContasPage} from '../pages/contas/contas';
 
 
 @Component({
@@ -10,6 +11,9 @@ import { HomePage } from '../pages/home/home';
 })
 export class MyApp {
   rootPage = HomePage;
+
+  home = HomePage;
+  contas = ContasPage
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
@@ -19,4 +23,9 @@ export class MyApp {
       Splashscreen.hide();
     });
   }
+
+  openPage(opcao) {
+    this.rootPage = opcao;
+  }
+    
 }
